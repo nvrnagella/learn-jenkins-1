@@ -8,6 +8,16 @@ pipeline {
                 echo 'Hello world'
             }
         }
+        stage('Hello1'){
+            steps {
+                echo 'Hello world'
+            }
+        }
+        stage('Hello2'){
+            steps{
+                echo 'Hello world'
+            }
+        }
     }
     post {
         always {
