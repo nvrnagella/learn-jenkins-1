@@ -42,6 +42,9 @@ pipeline{
 
                     print abc
                 }
+                script{
+                    print "abc = ${abc}"
+                }
 
             }
         }
