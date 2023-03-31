@@ -28,7 +28,7 @@
 // }
 @Library('roboshop') _
 
-test1()
+test1.new1()
 
 // pipeline{
 //     agent any
