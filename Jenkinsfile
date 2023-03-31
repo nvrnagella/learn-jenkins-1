@@ -28,32 +28,34 @@
 // }
 @Library('roboshop') _
 
-pipeline{
-    agent any
-    stages{
-        stage('test'){
-            steps{
-                script{
-                    env.abc = "Hello"
-                    def xyz = 10
+test1()
 
-                    print "abc = ${abc}"
-                    print "xyz = ${xyz}"
-
-                    print abc
-                }
-                script{
-                    print "abc = ${abc}"
-                }
-
-            }
-        }
-        stage('stage2'){
-            steps{
-                script{
-                    print "abc = ${abc}"
-                }
-            }
-        }
-    }
-}
+// pipeline{
+//     agent any
+//     stages{
+//         stage('test'){
+//             steps{
+//                 script{
+//                     env.abc = "Hello"
+//                     def xyz = 10
+//
+//                     print "abc = ${abc}"
+//                     print "xyz = ${xyz}"
+//
+//                     print abc
+//                 }
+//                 script{
+//                     print "abc = ${abc}"
+//                 }
+//
+//             }
+//         }
+//         stage('stage2'){
+//             steps{
+//                 script{
+//                     print "abc = ${abc}"
+//                 }
+//             }
+//         }
+//     }
+// }
